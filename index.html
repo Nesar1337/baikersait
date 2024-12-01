@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект Михайлова</title>
+
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script type="module">Fancybox.bind("[data-src]", { closeButton: false })</script>
+</head>
+
+<body>
+    <dialog id="modal-buy">
+        <form>
+            <h1>Форма обратной связи</h1>
+            <input required placeholder="ФИО">
+            <input type="tel" required placeholder="Телефон">
+            <input placeholder="Комментарий">
+            <button type="submit" onclick="$.fancybox.close();">Оформить заявку</button>
+        </form>
+    </dialog>
+
+    <header>
+        <img src="favicon.png">
+        <section>
+            <span>
+                <h3>КЛУБ БАЙКЕРОВ</h3>
+                
+            </span>
+            <span id="header-full-contacts">
+                <h3><img src="images/mail.svg">uhanovdanil@yandex.ru</h3>
+                <h3><img src="images/phone.svg">+7 (999) 999-99-99</h3>
+            </span>
+            <span id="header-mobile-contacts">
+                <h3>uhanovdanil@yandex.ru</h3>
+                <h3>+7 (999) 999-99-99</h3>
+            </span>
+        </section>
+    </header>
+
+    <nav>
+        <div>
+            <a href="#about">О Клубе</a><a href="#items">Товары</a><a href="#news">Новости</a>
+        </div>
+    </nav>
+
+    <section class="block" id="block-1">
+        <a name="about"></a>
+        <div id="block-1-main">
+            <h1>НОЧНОЙ ГОРОД<br>И БЫСТРАЯ ЕЗДА<br>ЭТО ПРО НАС</h1>
+            
+            <button data-src="#modal-buy">Оставить заявку</button>
+
+            <div class="controlsButtons" id="block-1-controls">
+                <button><img src="images/arrow.svg"></button>
+                <button><img src="images/arrow.svg"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="block-dark">
+        <a name="items"></a>
+        <div id="block-10">
+            <h1>Оборудование и материалы для фильтра
+                <div class="controlsButtons controlsButtonsBlack">
+                    <button disabled><img src="images/arrowStroke.svg"></button>
+                    <button><img src="images/arrowBlack.svg"></button>
+                </div>
+            </h1>
+            <div>
+                <div>
+                    <img src="images/banner-10-1.png">
+                    <div>
+                        <h3>Наклейки</h3>
+                        <br>
+                        <div>
+                            <span>
+                                <h3>400 руб.</h3>
+                                <h4>500 руб.</h4>
+                            </span>
+                            <br>
+                            </h3>
+                            <button data-src="#modal-buy">Оформить заявку</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner-10-2.png">
+                    <div>
+                        <h3>Байкерские куртки</h3>
+                        <br>
+                        <div>
+                            <span>
+                                <h3>15 100 руб.</h3>
+                                <h4>23 000 руб.</h4>
+                            </span>
+                            <br>
+                            <button data-src="#modal-buy">Оформить заявку</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner-10-3.png">
+                    <div>
+                        <h3>Брелки</h3>
+                        <br>
+                        <div>
+                            <span>
+                                <h3>150 руб.</h3>
+                                <h4>290 руб.</h4>
+                            </span>
+                            </h3>
+                            <br>
+                            <button data-src="#modal-buy">Оформить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <a name="news"></a>
+        <h1>Новости </h1>
+        <div id="block-12">
+            <span>
+                <h4>БУЛКИН КУПИЛ НОВЫЙ МОТОЦИКЛ
+                    <br>Известный авто-блогер купил 2.5 литровый мотоцикл triumph ROCKET 3 STORM.
+                </h4><img src="images/banner-2-1.png">
+            </span>
+            <span>
+                <img src="images/banner-2-2.png">
+                <h4>MotoNinja РАЗБИЛСЯ
+                    <br>Известный мотоблогер MotoNinja попал в ДТП в Геленджике. Я призываю не анализировать поездку или манеру вождения.
+                </h4>
+            </span>
+        </div>
+    </section>
+
+    <section class="block">
+        <div id="block-19">
+            <h3>Приглашаем в наш клуб байкеров</h3><br>
+            <h4>Маштабные сходки, большое единое движение, чуство скорости. Вы точно получите незыбываемые эмоции и новых друзей, которые вам всегда помогут.</h4>
+            <br>
+            <form id="block-19-bottom" method="post" action="/">
+                <input placeholder="Имя" minlength="8" required>
+                <input type="tel" required placeholder="Телефон">
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="block">
+        <div id="block-20">
+            <form>
+                <h1>Адреса и контакты</h1>
+                <span>
+                    <img src="images/address.svg">
+                    <h4>Адрес</h4>
+                </span>
+                <h3>Московская область Московская область, Московская область</h3>
+                <span>
+                    <img src="images/phone.svg">
+                    <h4>Телефон</h4>
+                </span>
+                <h3>+7 (999) 999-99-99</h3>
+                <span>
+                    <img src="images/mail.svg">
+                    <h4>Электронная почта</h4>
+                </span>
+                <h3>uhanovdanil@yandex.ru</h3>
+                <button id="whatapp"><img src="images/whatsapp.svg"></button>
+                <button>Оставить заявку на звонок</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
